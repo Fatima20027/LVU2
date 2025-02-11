@@ -26,7 +26,7 @@ yesBtn.addEventListener('click', function() {
     });
 
     text.innerText = 'Thanks for being my Valentine!💗';
-    smallText.innerText = 'YAAY I kneeeeew it!!';
+    smallText.innerText = 'Yaaay I kneeeeew it!!';
     gif.src = 'image/happy-cat.gif';
 
    
@@ -62,10 +62,10 @@ noBtn.addEventListener('click', function() {
         const rootStyles = getComputedStyle(document.documentElement);
         const gapScaleFactor = parseFloat(rootStyles.getPropertyValue("--gap-scale-factor")) || 150;
 
-        const currentGap = parseFloat(getComputedStyle(buttonContainer).gap) || 1;
+        const currentGap = parseFloat(getComputedStyle(buttonContainer).gap) || 10;
         const newGap = Math.sqrt(currentGap * gapScaleFactor); // Scale based on the factor
         buttonContainer.style.gap = `${newGap}px`;
-        yesBtn.style.marginTop = `5px`;
+        yesBtn.style.marginTop = `3px`;
     }
 
     
