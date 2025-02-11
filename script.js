@@ -60,9 +60,9 @@ noBtn.addEventListener('click', function() {
 
         // Dynamically update gap in the button container
         const rootStyles = getComputedStyle(document.documentElement);
-        const gapScaleFactor = parseFloat(rootStyles.getPropertyValue("--gap-scale-factor")) || 250;
+        const gapScaleFactor = parseFloat(rootStyles.getPropertyValue("--gap-scale-factor")) || 150;
 
-        const currentGap = parseFloat(getComputedStyle(buttonContainer).gap) || 20;
+        const currentGap = parseFloat(getComputedStyle(buttonContainer).gap) || 1;
         const newGap = Math.sqrt(currentGap * gapScaleFactor); // Scale based on the factor
         buttonContainer.style.gap = `${newGap}px`;
         yesBtn.style.marginTop = `5px`;
